@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)file:///C:/Users/qa_assistant/Downloads/royale_cold_storage_deck.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royale Cold Storage - Processing &amp; FSQR Performance Deck</title>
+  <!-- Tailwind CSS -->
+  <script src="./Royale Cold Storage - Processing &amp; FSQR Performance Deck TEST_files/saved_resource"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="./Royale Cold Storage - Processing &amp; FSQR Performance Deck TEST_files/all.min.css">
+  <!-- Chart.js -->
+  <script src="./Royale Cold Storage - Processing &amp; FSQR Performance Deck TEST_files/chart.js.download"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    
+    .font-oswald {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .custom-scroll::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+
+    .table-cell-input {
+      background: transparent;
+      border: 1px solid transparent;
+      color: inherit;
+      width: 100%;
+      text-align: center;
+      padding: 4px 6px;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+    .table-cell-input:focus {
+      background: #ffffff;
+      border-color: #2563eb;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+    }
+    .table-cell-input:hover:not(:focus) {
+      border-color: #cbd5e1;
+      background: #f1f5f9;
+    }
+
+    .glass-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.inset-y-0{top:0px;bottom:0px}.left-0{left:0px}.top-0{top:0px}.z-10{z-index:10}.z-30{z-index:30}.z-50{z-index:50}.col-span-12{grid-column:span 12 / span 12}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-1{margin-top:0.25rem}.mt-6{margin-top:1.5rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-7{height:1.75rem}.min-h-\[180px\]{min-height:180px}.min-h-\[200px\]{min-height:200px}.min-h-\[260px\]{min-height:260px}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-7{width:1.75rem}.w-full{width:100%}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.border-collapse{border-collapse:collapse}.grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-200 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(226 232 240 / var(--tw-divide-opacity, 1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.border-purple-200{--tw-border-opacity:1;border-color:rgb(233 213 255 / var(--tw-border-opacity, 1))}.border-red-200{--tw-border-opacity:1;border-color:rgb(254 202 202 / var(--tw-border-opacity, 1))}.border-rose-200{--tw-border-opacity:1;border-color:rgb(254 205 211 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-50\/70{background-color:rgb(239 246 255 / 0.7)}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-50\/70{background-color:rgb(236 253 245 / 0.7)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-purple-50{--tw-bg-opacity:1;background-color:rgb(250 245 255 / var(--tw-bg-opacity, 1))}.bg-purple-50\/70{background-color:rgb(250 245 255 / 0.7)}.bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234 / var(--tw-bg-opacity, 1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.bg-rose-50\/70{background-color:rgb(255 241 242 / 0.7)}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-50\/80{background-color:rgb(248 250 252 / 0.8)}.bg-slate-900\/60{background-color:rgb(15 23 42 / 0.6)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pb-2{padding-bottom:0.5rem}.pb-3{padding-bottom:0.75rem}.pl-10{padding-left:2.5rem}.pl-3{padding-left:0.75rem}.pr-3{padding-right:0.75rem}.pt-3{padding-top:0.75rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234 / var(--tw-text-opacity, 1))}.text-purple-700{--tw-text-opacity:1;color:rgb(126 34 206 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-rose-600{--tw-text-opacity:1;color:rgb(225 29 72 / var(--tw-text-opacity, 1))}.text-rose-700{--tw-text-opacity:1;color:rgb(190 18 60 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-blue-600\/20{--tw-shadow-color:rgb(37 99 235 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-blue-100 *::selection{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.selection\:text-blue-900 *::selection{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.selection\:bg-blue-100::selection{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.selection\:text-blue-900::selection{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-100:hover{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-700:hover{--tw-bg-opacity:1;background-color:rgb(4 120 87 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-100:hover{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.hover\:bg-red-100:hover{--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.hover\:bg-red-700:hover{--tw-bg-opacity:1;background-color:rgb(185 28 28 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:text-red-600:hover{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.hover\:text-slate-600:hover{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.focus\:border-blue-600:focus{--tw-border-opacity:1;border-color:rgb(37 99 235 / var(--tw-border-opacity, 1))}.focus\:bg-white:focus{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 1024px){.lg\:col-span-3{grid-column:span 3 / span 3}.lg\:col-span-6{grid-column:span 6 / span 6}}</style></head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-blue-100 selection:text-blue-900">
+
+  <!-- AUTHENTICATION OVERLAY / LOGIN MODAL -->
+  <div id="authModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 transition-all hidden">
+    <div class="glass-card max-w-md w-full rounded-2xl p-8 border border-slate-200 shadow-2xl">
+      <div class="text-center mb-6">
+        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-50 text-blue-600 mb-3 border border-blue-200 shadow-sm">
+          <i class="fa-solid fa-snowflake text-3xl"></i>
+        </div>
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 font-oswald uppercase">Royale Cold Storage</h2>
+        <p class="text-xs text-slate-500 uppercase tracking-widest mt-1">Processing &amp; FSQR Performance Deck</p>
+      </div>
+
+      <form id="loginForm" class="space-y-4" onsubmit="handleLogin(event)">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Email / Username</label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+              <i class="fa-solid fa-user text-sm"></i>
+            </span>
+            <input type="text" id="loginEmail" required="" class="w-full bg-slate-50 border border-slate-300 rounded-lg pl-10 pr-3 py-2 text-sm text-slate-900 focus:outline-none focus:border-blue-600 focus:bg-white transition" placeholder="admin@rcs.com">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Password</label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+              <i class="fa-solid fa-lock text-sm"></i>
+            </span>
+            <input type="password" id="loginPassword" required="" class="w-full bg-slate-50 border border-slate-300 rounded-lg pl-10 pr-3 py-2 text-sm text-slate-900 focus:outline-none focus:border-blue-600 focus:bg-white transition" placeholder="••••••••">
+          </div>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-lg transition-all shadow-md shadow-blue-600/20 flex items-center justify-center gap-2 text-sm">
+          <i class="fa-solid fa-right-to-bracket"></i> Sign In to Portal
+        </button>
+      </form>
+
+      <div class="mt-6 pt-4 border-t border-slate-200">
+        <p class="text-xs text-center text-slate-500 font-semibold mb-2 uppercase">Quick Demo Login Presets:</p>
+        <div class="grid grid-cols-3 gap-2">
+          <button onclick="quickLogin('admin')" class="bg-purple-50 hover:bg-purple-100 border border-purple-200 text-purple-700 text-xs py-1.5 rounded-lg transition font-semibold">Admin</button>
+          <button onclick="quickLogin('encoder')" class="bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 text-emerald-700 text-xs py-1.5 rounded-lg transition font-semibold">Encoder</button>
+          <button onclick="quickLogin('viewer')" class="bg-slate-100 hover:bg-slate-200 border border-slate-300 text-slate-700 text-xs py-1.5 rounded-lg transition font-semibold">Viewer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN APP CONTAINER -->
+  <div id="appContainer" class="flex-1 flex flex-col min-h-screen">
+    
+    <!-- HEADER NAVBAR -->
+    <header class="bg-white border-b border-slate-200 px-6 py-3 flex items-center justify-between sticky top-0 z-30 shadow-xs">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center text-white shadow-md shadow-blue-600/20">
+          <i class="fa-solid fa-snowflake text-xl"></i>
+        </div>
+        <div>
+          <h1 class="text-xl font-extrabold text-slate-900 tracking-wider font-oswald uppercase">Royale Cold Storage North, Inc.</h1>
+          <p class="text-xs text-slate-500">Processing &amp; FSQR Performance Deck | Operational Compliance Engine</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <!-- ROLE & PROFILE INDICATOR -->
+        <div class="flex items-center gap-2.5 bg-slate-100 border border-slate-200 rounded-full px-3 py-1">
+          <div id="userBadge" class="w-7 h-7 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold text-xs uppercase shadow-xs">A</div>
+          <div class="text-xs">
+            <p id="userName" class="font-bold text-slate-800 leading-tight">System Admin</p>
+            <p id="userRoleTag" class="text-[10px] text-purple-600 font-semibold uppercase leading-tight">Admin Role</p>
+          </div>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <button id="addRecordBtn" onclick="openAddModal()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-3 py-2 rounded-lg transition flex items-center gap-1.5 shadow-sm">
+          <i class="fa-solid fa-plus"></i> Add Entry
+        </button>
+
+        <button id="clearTableBtn" onclick="openClearModal()" class="bg-red-50 hover:bg-red-100 border border-red-200 text-red-600 text-xs font-semibold px-3 py-2 rounded-lg transition flex items-center gap-1.5">
+          <i class="fa-solid fa-trash-can"></i> Clear Table
+        </button>
+
+        <button onclick="exportToCSV()" class="bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 text-xs font-semibold px-3 py-2 rounded-lg transition flex items-center gap-1.5 shadow-xs">
+          <i class="fa-solid fa-file-excel text-emerald-600 text-sm"></i> Export CSV
+        </button>
+
+        <button onclick="logout()" class="bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-red-600 text-xs p-2 rounded-lg transition" title="Sign Out">
+          <i class="fa-solid fa-right-from-bracket text-base"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- DASHBOARD CONTENT GRID -->
+    <main class="p-4 grid grid-cols-12 gap-4 flex-1">
+      
+      <!-- LEFT COLUMN: CUTTING METRICS & SHIFT GRAPH (COL SPAN 3) -->
+      <section class="col-span-12 lg:col-span-3 flex flex-col gap-4">
+        
+        <!-- 2x2 CUTTING METRIC CARDS -->
+        <div class="glass-card rounded-xl p-4">
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3 flex items-center justify-between border-b border-slate-100 pb-2">
+            <span>Cutting Metrics</span>
+            <i class="fa-solid fa-scissors text-blue-600"></i>
+          </h2>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <span class="text-[10px] uppercase font-bold text-slate-500 block">WB / Cutter</span>
+              <span id="metricWbCutter" class="text-2xl font-black text-slate-900 font-oswald">350</span>
+            </div>
+            <div class="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <span class="text-[10px] uppercase font-bold text-slate-500 block">WB / Min</span>
+              <span id="metricWbMin" class="text-2xl font-black text-slate-900 font-oswald">3.8</span>
+            </div>
+            <div class="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <span class="text-[10px] uppercase font-bold text-slate-500 block">Total Cutters</span>
+              <span id="metricTotalCutters" class="text-2xl font-black text-slate-900 font-oswald">24</span>
+            </div>
+            <div class="bg-slate-50 rounded-lg p-3 border border-slate-200">
+              <span class="text-[10px] uppercase font-bold text-slate-500 block">Cutting Yield</span>
+              <span id="metricCuttingYield" class="text-2xl font-black text-rose-600 font-oswald">99%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CUTTING YIELD PER SHIFT CHART -->
+        <div class="glass-card rounded-xl p-4 flex-1 flex flex-col min-h-[260px]">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3 flex items-center justify-between border-b border-slate-100 pb-2">
+            <span>Cutting Yield Per Shift</span>
+            <div class="flex items-center gap-2 text-[10px]">
+              <span class="inline-flex items-center gap-1 text-blue-600 font-semibold"><span class="w-2 h-2 rounded-full bg-blue-600"></span> Day</span>
+              <span class="inline-flex items-center gap-1 text-purple-600 font-semibold"><span class="w-2 h-2 rounded-full bg-purple-600"></span> Night</span>
+            </div>
+          </h3>
+          <div class="flex-1 min-h-[180px] relative">
+            <canvas id="shiftChart" width="424" height="495" style="display: block; box-sizing: border-box; height: 495.5px; width: 424px;"></canvas>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- CENTER COLUMN: MATERIAL BALANCE TOP KPIS & MASTER GRID (COL SPAN 6) -->
+      <section class="col-span-12 lg:col-span-6 flex flex-col gap-4">
+        
+        <!-- TOP SUMMARY BANNER KPIS -->
+        <div class="glass-card rounded-xl p-4">
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3 flex items-center justify-between border-b border-slate-100 pb-2">
+            <span>Material Balance Overview</span>
+            <span class="text-[10px] bg-blue-50 text-blue-700 border border-blue-200 px-2 py-0.5 rounded font-mono font-medium">Formula: Inbound x 1.3</span>
+          </h2>
+          <div class="grid grid-cols-4 gap-3 text-center">
+            <div class="bg-emerald-50/70 rounded-lg p-2.5 border border-emerald-200">
+              <span id="avgWorkingHrs" class="text-xl font-bold text-emerald-700 font-oswald block">16.5</span>
+              <span class="text-[9px] uppercase font-bold text-slate-500 tracking-tight">Avg Working Hrs</span>
+            </div>
+            <div class="bg-blue-50/70 rounded-lg p-2.5 border border-blue-200">
+              <span id="avgInbound" class="text-xl font-bold text-blue-700 font-oswald block">31,000</span>
+              <span class="text-[9px] uppercase font-bold text-slate-500 tracking-tight">Avg WB Inbound</span>
+            </div>
+            <div class="bg-purple-50/70 rounded-lg p-2.5 border border-purple-200">
+              <span id="avgWip" class="text-xl font-bold text-purple-700 font-oswald block">35,833</span>
+              <span class="text-[9px] uppercase font-bold text-slate-500 tracking-tight">Avg Rollover WIP</span>
+            </div>
+            <div class="bg-rose-50/70 rounded-lg p-2.5 border border-rose-200">
+              <span id="avgSbp" class="text-xl font-bold text-rose-700 font-oswald block">517</span>
+              <span class="text-[9px] uppercase font-bold text-slate-500 tracking-tight">Avg SBP KG</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MATERIAL BALANCE DATA TABLE -->
+        <div class="glass-card rounded-xl flex-1 flex flex-col overflow-hidden">
+          <div class="p-3 border-b border-slate-200 flex items-center justify-between bg-slate-50/80">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-700 flex items-center gap-2">
+              <i class="fa-solid fa-table-list text-blue-600"></i> Material Balance Master Log
+            </span>
+            <div class="flex items-center gap-2">
+              <span class="text-[10px] text-slate-500 bg-white border border-slate-200 px-2 py-0.5 rounded shadow-2xs font-mono"><i class="fa-solid fa-circle-info text-blue-500"></i> LQ = PAA | BQ = PECHO</span>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto custom-scroll flex-1">
+            <table class="w-full text-left text-xs border-collapse">
+              <thead>
+                <tr class="bg-slate-100 text-slate-600 uppercase text-[10px] tracking-wider border-b border-slate-200 font-bold sticky top-0 z-10">
+                  <th class="p-2.5 text-center">Date</th>
+                  <th class="p-2.5 text-center">Shift</th>
+                  <th class="p-2.5 text-right">WB Inbound</th>
+                  <th class="p-2.5 text-right">Assumed Wt (x1.3)</th>
+                  <th class="p-2.5 text-right">Total Cut Output</th>
+                  <th class="p-2.5 text-right">WIP Output</th>
+                  <th class="p-2.5 text-right">Yield Var</th>
+                  <th class="p-2.5 text-right">SBP</th>
+                  <th class="p-2.5 text-center">Bal %</th>
+                  <th class="p-2.5 text-center">Manning Present</th>
+                  <th class="p-2.5 text-center">Hrs</th>
+                  <th class="p-2.5 text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody id="masterTableBody" class="divide-y divide-slate-200 font-mono text-slate-800"><tr><td colspan="12" class="p-6 text-center text-slate-400 italic bg-white font-sans">No records found. Click "Add Entry" to insert new data.</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- RIGHT COLUMN: WORKFORCE & PRODUCTIVITY (COL SPAN 3) -->
+      <section class="col-span-12 lg:col-span-3 flex flex-col gap-4">
+        
+        <!-- WORKFORCE HEADCOUNT -->
+        <div class="glass-card rounded-xl p-4">
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3 flex items-center justify-between border-b border-slate-100 pb-2">
+            <span>Workforce Headcount</span>
+            <i class="fa-solid fa-users text-blue-600"></i>
+          </h2>
+          <div class="space-y-2">
+            <div class="flex justify-between items-center p-2 rounded bg-slate-50 border border-slate-200 text-xs">
+              <span class="text-slate-600 uppercase font-semibold">Total Headcount</span>
+              <span id="hcTotal" class="font-bold font-oswald text-slate-900 text-base">172</span>
+            </div>
+            <div class="flex justify-between items-center p-2 rounded bg-slate-50 border border-slate-200 text-xs">
+              <span class="text-slate-600 uppercase font-semibold">Direct HC (Active)</span>
+              <span id="hcDirect" class="font-bold font-oswald text-blue-600 text-base">20</span>
+            </div>
+            <div class="flex justify-between items-center p-2 rounded bg-slate-50 border border-slate-200 text-xs">
+              <span class="text-slate-600 uppercase font-semibold">Indirect HC</span>
+              <span id="hcIndirect" class="font-bold font-oswald text-purple-600 text-base">152</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCTIVITY CHART -->
+        <div class="glass-card rounded-xl p-4 flex-1 flex flex-col min-h-[260px]">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3 flex items-center justify-between border-b border-slate-100 pb-2">
+            <span>Productivity Trend</span>
+            <i class="fa-solid fa-chart-bar text-emerald-600"></i>
+          </h3>
+          <div class="flex-1 min-h-[200px] relative">
+            <canvas id="productivityChart" width="424" height="513" style="display: block; box-sizing: border-box; height: 513.5px; width: 424px;"></canvas>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-slate-200 px-6 py-2 text-between text-[11px] text-slate-500 flex justify-between items-center shadow-2xs">
+      <span>Royale Cold Storage North, Inc. — FSQR &amp; Processing Analytics Engine</span>
+      <span>Calculations Automated: Assumed Wt = Inbound × 1.3 | Code Definitions: LQ = PAA, BQ = PECHO</span>
+    </footer>
+
+  </div>
+
+  <!-- ADD ENTRY MODAL -->
+  <div id="addModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="glass-card max-w-lg w-full rounded-xl p-6 border border-slate-200 shadow-2xl">
+      <div class="flex justify-between items-center mb-4 border-b border-slate-100 pb-3">
+        <h3 class="text-lg font-bold text-slate-900 font-oswald uppercase flex items-center gap-2">
+          <i class="fa-solid fa-file-circle-plus text-emerald-600"></i> Add Processing Entry
+        </h3>
+        <button onclick="closeAddModal()" class="text-slate-400 hover:text-slate-600 text-lg transition"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <form id="addRecordForm" onsubmit="handleAddRecord(event)" class="space-y-3">
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-[11px] uppercase text-slate-600 font-semibold mb-1">Date</label>
+            <input type="date" id="inputDate" required="" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900 focus:bg-white focus:border-blue-600 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-[11px] uppercase text-slate-600 font-semibold mb-1">Shift</label>
+            <select id="inputShift" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900 focus:bg-white focus:border-blue-600 focus:outline-none">
+              <option value="Day Shift">Day Shift</option>
+              <option value="Night Shift">Night Shift</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-[11px] uppercase text-slate-600 font-semibold mb-1">WB Inbound (KG)</label>
+            <input type="number" step="any" id="inputWbInbound" required="" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="30000">
+          </div>
+          <div>
+            <label class="block text-[11px] uppercase text-slate-600 font-semibold mb-1">Total Cut Output (KG)</label>
+            <input type="number" step="any" id="inputCutOutput" required="" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="29000">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-3">
+          <div>
+            <label class="block text-[11px] uppercase text-slate-600 font-semibold mb-1">WIP Output (KG)</label>
+            <input type="number" step="any" id="inputWipOutput" required="" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="35500">
+          </div>
+          <div>
+            <label class="block text-[11px] uppercase text-slate-600 font-semibold mb-1">SBP (KG)</label>
+            <input type="number" step="any" id="inputSbp" required="" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="500">
+          </div>
+          <div>
+            <label class="block text-[11px] uppercase text-slate-600 font-semibold mb-1">Actual Manning</label>
+            <input type="number" id="inputManning" required="" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="20">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-[11px] uppercase text-slate-600 font-semibold mb-1">Working Hours</label>
+          <input type="number" step="0.1" id="inputWorkingHrs" required="" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="16.5">
+        </div>
+
+        <div class="pt-3 border-t border-slate-200 flex justify-end gap-2">
+          <button type="button" onclick="closeAddModal()" class="px-3.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg transition">Cancel</button>
+          <button type="submit" class="px-4 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs rounded-lg transition shadow-sm">Save Record</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- CLEAR TABLE CONFIRMATION MODAL -->
+  <div id="clearConfirmModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="glass-card max-w-sm w-full rounded-xl p-6 border border-red-200 text-center shadow-2xl">
+      <div class="w-12 h-12 rounded-full bg-red-50 text-red-600 border border-red-200 mx-auto flex items-center justify-center mb-3 text-xl">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </div>
+      <h3 class="text-base font-bold text-slate-900 font-oswald uppercase mb-1">Confirm Clear All Data</h3>
+      <p class="text-xs text-slate-500 mb-4">Are you sure you want to permanently delete all Material Balance records? This action cannot be undone.</p>
+      
+      <div class="flex justify-center gap-3">
+        <button onclick="closeClearModal()" class="px-4 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg transition">Cancel</button>
+        <button onclick="confirmClearTable()" class="px-4 py-1.5 bg-red-600 hover:bg-red-700 text-white font-semibold text-xs rounded-lg transition shadow-sm">Yes, Clear All</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // INITIAL DEFAULT RECORDS
+    const defaultRecords = [
+      { id: 1, date: '2026-09-21', shift: 'Day Shift', wbInbound: 30000, cutOutput: 29000, wipOutput: 35500, sbp: 500, manning: 20, workingHrs: 16.5 },
+      { id: 2, date: '2026-09-22', shift: 'Night Shift', wbInbound: 35000, cutOutput: 33000, wipOutput: 38000, sbp: 600, manning: 22, workingHrs: 16.5 },
+      { id: 3, date: '2026-09-23', shift: 'Day Shift', wbInbound: 28000, cutOutput: 27500, wipOutput: 34000, sbp: 450, manning: 19, workingHrs: 15.0 }
+    ];
+
+    let recordsData = [];
+    let currentUserRole = null;
+    let shiftChartInstance = null;
+    let productivityChartInstance = null;
+
+    // LOCAL STORAGE HANDLERS
+    function loadState() {
+      const stored = localStorage.getItem('rcs_deck_records');
+      if (stored) {
+        try {
+          recordsData = JSON.parse(stored);
+        } catch (e) {
+          recordsData = [...defaultRecords];
+        }
+      } else {
+        recordsData = [...defaultRecords];
+        persistState();
+      }
+    }
+
+    function persistState() {
+      localStorage.setItem('rcs_deck_records', JSON.stringify(recordsData));
+      renderTable();
+      recalculateKPIsAndCharts();
+    }
+
+    // AUTHENTICATION LOGIC
+    function handleLogin(e) {
+      if (e) e.preventDefault();
+      const email = document.getElementById('loginEmail').value.toLowerCase();
+      
+      if (email.includes('admin')) {
+        setRole('admin', 'System Admin');
+      } else if (email.includes('encoder') || email.includes('editor')) {
+        setRole('encoder', 'FSQR Encoder');
+      } else {
+        setRole('viewer', 'Viewer Account');
+      }
+    }
+
+    function quickLogin(role) {
+      if (role === 'admin') setRole('admin', 'System Admin');
+      else if (role === 'encoder') setRole('encoder', 'FSQR Encoder');
+      else setRole('viewer', 'Viewer Account');
+    }
+
+    function setRole(role, name) {
+      currentUserRole = role;
+      document.getElementById('authModal').classList.add('hidden');
+      document.getElementById('appContainer').classList.remove('hidden');
+
+      const userBadge = document.getElementById('userBadge');
+      const userName = document.getElementById('userName');
+      const userRoleTag = document.getElementById('userRoleTag');
+
+      userName.innerText = name;
+
+      if (role === 'admin') {
+        userBadge.className = "w-7 h-7 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold text-xs uppercase shadow-xs";
+        userBadge.innerText = "A";
+        userRoleTag.innerText = "Admin Role";
+        userRoleTag.className = "text-[10px] text-purple-600 font-semibold uppercase leading-tight";
+        
+        document.getElementById('addRecordBtn').classList.remove('hidden');
+        document.getElementById('clearTableBtn').classList.remove('hidden');
+      } else if (role === 'encoder') {
+        userBadge.className = "w-7 h-7 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xs uppercase shadow-xs";
+        userBadge.innerText = "E";
+        userRoleTag.innerText = "Encoder Role";
+        userRoleTag.className = "text-[10px] text-emerald-600 font-semibold uppercase leading-tight";
+
+        document.getElementById('addRecordBtn').classList.remove('hidden');
+        document.getElementById('clearTableBtn').classList.add('hidden');
+      } else {
+        userBadge.className = "w-7 h-7 rounded-full bg-slate-500 text-white flex items-center justify-center font-bold text-xs uppercase shadow-xs";
+        userBadge.innerText = "V";
+        userRoleTag.innerText = "Viewer Role";
+        userRoleTag.className = "text-[10px] text-slate-500 font-semibold uppercase leading-tight";
+
+        document.getElementById('addRecordBtn').classList.add('hidden');
+        document.getElementById('clearTableBtn').classList.add('hidden');
+      }
+
+      loadState();
+      initCharts();
+      renderTable();
+    }
+
+    function logout() {
+      document.getElementById('authModal').classList.remove('hidden');
+      document.getElementById('appContainer').classList.add('hidden');
+    }
+
+    // RENDER MATERIAL BALANCE TABLE
+    function renderTable() {
+      const tbody = document.getElementById('masterTableBody');
+      tbody.innerHTML = '';
+
+      if (recordsData.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="12" class="p-6 text-center text-slate-400 italic bg-white font-sans">No records found. Click "Add Entry" to insert new data.</td></tr>`;
+        return;
+      }
+
+      recordsData.forEach((row, index) => {
+        const assumedWt = row.wbInbound * 1.3;
+        const totalBatch = row.cutOutput + row.wipOutput;
+        const yieldVar = totalBatch - assumedWt;
+        const balancePct = assumedWt > 0 ? ((totalBatch / assumedWt) * 100).toFixed(2) : '0.00';
+        const isEditable = currentUserRole === 'admin' || currentUserRole === 'encoder';
+
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-50/80 transition bg-white";
+
+        tr.innerHTML = `
+          <td class="p-1.5 text-center">
+            ${isEditable ? `<input type="date" value="${row.date}" onchange="updateRowField(${index}, 'date', this.value)" class="table-cell-input text-xs font-sans">` : row.date}
+          </td>
+          <td class="p-1.5 text-center">
+            ${isEditable ? `
+              <select onchange="updateRowField(${index}, 'shift', this.value)" class="table-cell-input text-xs bg-white font-sans">
+                <option value="Day Shift" ${row.shift === 'Day Shift' ? 'selected' : ''}>Day</option>
+                <option value="Night Shift" ${row.shift === 'Night Shift' ? 'selected' : ''}>Night</option>
+              </select>
+            ` : row.shift}
+          </td>
+          <td class="p-1.5 text-right">
+            ${isEditable ? `<input type="number" step="any" value="${row.wbInbound}" onchange="updateRowField(${index}, 'wbInbound', this.value)" class="table-cell-input text-right font-bold text-slate-900">` : row.wbInbound.toLocaleString()}
+          </td>
+          <td class="p-1.5 text-right font-bold text-blue-600 bg-blue-50/30">
+            ${assumedWt.toLocaleString(undefined, {minimumFractionDigits: 1, maximumFractionDigits: 1})}
+          </td>
+          <td class="p-1.5 text-right">
+            ${isEditable ? `<input type="number" step="any" value="${row.cutOutput}" onchange="updateRowField(${index}, 'cutOutput', this.value)" class="table-cell-input text-right">` : row.cutOutput.toLocaleString()}
+          </td>
+          <td class="p-1.5 text-right">
+            ${isEditable ? `<input type="number" step="any" value="${row.wipOutput}" onchange="updateRowField(${index}, 'wipOutput', this.value)" class="table-cell-input text-right">` : row.wipOutput.toLocaleString()}
+          </td>
+          <td class="p-1.5 text-right font-bold ${yieldVar < 0 ? 'text-rose-600' : 'text-emerald-600'}">
+            ${yieldVar > 0 ? '+' : ''}${yieldVar.toLocaleString(undefined, {minimumFractionDigits: 1, maximumFractionDigits: 1})}
+          </td>
+          <td class="p-1.5 text-right">
+            ${isEditable ? `<input type="number" step="any" value="${row.sbp}" onchange="updateRowField(${index}, 'sbp', this.value)" class="table-cell-input text-right text-rose-600 font-medium">` : row.sbp.toLocaleString()}
+          </td>
+          <td class="p-1.5 text-center font-bold ${balancePct >= 98 ? 'text-emerald-600' : 'text-amber-600'}">
+            ${balancePct}%
+          </td>
+          <td class="p-1.5 text-center">
+            ${isEditable ? `<input type="number" value="${row.manning}" onchange="updateRowField(${index}, 'manning', this.value)" class="table-cell-input text-center font-bold text-emerald-700">` : row.manning}
+          </td>
+          <td class="p-1.5 text-center">
+            ${isEditable ? `<input type="number" step="0.1" value="${row.workingHrs}" onchange="updateRowField(${index}, 'workingHrs', this.value)" class="table-cell-input text-center">` : row.workingHrs}
+          </td>
+          <td class="p-1.5 text-center">
+            ${currentUserRole === 'admin' ? `
+              <button onclick="deleteRow(${index})" class="text-slate-400 hover:text-rose-600 transition p-1" title="Delete Row">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            ` : '<i class="fa-solid fa-lock text-slate-300 text-xs"></i>'}
+          </td>
+        `;
+
+        tbody.appendChild(tr);
+      });
+    }
+
+    // UPDATE ROW FIELD ATTR
+    function updateRowField(index, field, value) {
+      if (field === 'date' || field === 'shift') {
+        recordsData[index][field] = value;
+      } else {
+        recordsData[index][field] = parseFloat(value) || 0;
+      }
+      persistState();
+    }
+
+    // DELETE ROW (ADMIN ONLY)
+    function deleteRow(index) {
+      if (currentUserRole !== 'admin') return;
+      recordsData.splice(index, 1);
+      persistState();
+    }
+
+    // CLEAR ALL DATA (ADMIN ONLY)
+    function openClearModal() {
+      if (currentUserRole !== 'admin') return;
+      document.getElementById('clearConfirmModal').classList.remove('hidden');
+    }
+
+    function closeClearModal() {
+      document.getElementById('clearConfirmModal').classList.add('hidden');
+    }
+
+    function confirmClearTable() {
+      recordsData = [];
+      persistState();
+      closeClearModal();
+    }
+
+    // ADD RECORD MODAL HANDLERS
+    function openAddModal() {
+      if (currentUserRole === 'viewer') return;
+      document.getElementById('inputDate').value = new Date().toISOString().split('T')[0];
+      document.getElementById('addModal').classList.remove('hidden');
+    }
+
+    function closeAddModal() {
+      document.getElementById('addModal').classList.add('hidden');
+    }
+
+    function handleAddRecord(e) {
+      e.preventDefault();
+      const newRec = {
+        id: Date.now(),
+        date: document.getElementById('inputDate').value,
+        shift: document.getElementById('inputShift').value,
+        wbInbound: parseFloat(document.getElementById('inputWbInbound').value) || 0,
+        cutOutput: parseFloat(document.getElementById('inputCutOutput').value) || 0,
+        wipOutput: parseFloat(document.getElementById('inputWipOutput').value) || 0,
+        sbp: parseFloat(document.getElementById('inputSbp').value) || 0,
+        manning: parseInt(document.getElementById('inputManning').value) || 0,
+        workingHrs: parseFloat(document.getElementById('inputWorkingHrs').value) || 0
+      };
+
+      recordsData.push(newRec);
+      persistState();
+      closeAddModal();
+      document.getElementById('addRecordForm').reset();
+    }
+
+    // RECALCULATE SUMMARY KPIS
+    function recalculateKPIsAndCharts() {
+      if (recordsData.length === 0) {
+        document.getElementById('avgWorkingHrs').innerText = "0.0";
+        document.getElementById('avgInbound').innerText = "0";
+        document.getElementById('avgWip').innerText = "0";
+        document.getElementById('avgSbp').innerText = "0";
+        document.getElementById('hcDirect').innerText = "0";
+        document.getElementById('hcTotal').innerText = "152";
+        return;
+      }
+
+      const totalHrs = recordsData.reduce((acc, r) => acc + r.workingHrs, 0);
+      const totalInbound = recordsData.reduce((acc, r) => acc + r.wbInbound, 0);
+      const totalWip = recordsData.reduce((acc, r) => acc + r.wipOutput, 0);
+      const totalSbp = recordsData.reduce((acc, r) => acc + r.sbp, 0);
+
+      document.getElementById('avgWorkingHrs').innerText = (totalHrs / recordsData.length).toFixed(1);
+      document.getElementById('avgInbound').innerText = Math.round(totalInbound / recordsData.length).toLocaleString();
+      document.getElementById('avgWip').innerText = Math.round(totalWip / recordsData.length).toLocaleString();
+      document.getElementById('avgSbp').innerText = Math.round(totalSbp / recordsData.length).toLocaleString();
+
+      // Sync Workforce Direct Headcount with Manning Present
+      const latestManning = recordsData[recordsData.length - 1]?.manning || 20;
+      document.getElementById('hcDirect').innerText = latestManning;
+      document.getElementById('hcTotal').innerText = 152 + latestManning;
+    }
+
+    // INITIALIZE CHART.JS VISUALIZATIONS
+    function initCharts() {
+      if (shiftChartInstance) shiftChartInstance.destroy();
+      if (productivityChartInstance) productivityChartInstance.destroy();
+
+      // Shift Line Chart
+      const ctxShift = document.getElementById('shiftChart').getContext('2d');
+      shiftChartInstance = new Chart(ctxShift, {
+        type: 'line',
+        data: {
+          labels: ['WK 1', 'WK 2', 'WK 3', 'WK 4'],
+          datasets: [
+            {
+              label: 'Day Shift',
+              data: [3.4, 3.8, 3.4, 3.4],
+              borderColor: '#2563eb',
+              backgroundColor: 'rgba(37, 99, 235, 0.08)',
+              borderWidth: 2,
+              tension: 0.4,
+              fill: true,
+              pointBackgroundColor: '#2563eb'
+            },
+            {
+              label: 'Night Shift',
+              data: [3.4, 3.4, 3.8, 3.8],
+              borderColor: '#9333ea',
+              backgroundColor: 'rgba(147, 51, 234, 0.08)',
+              borderWidth: 2,
+              tension: 0.4,
+              fill: true,
+              pointBackgroundColor: '#9333ea'
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { color: '#f1f5f9' }, ticks: { color: '#64748b', font: { size: 10 } } },
+            y: { grid: { color: '#f1f5f9' }, ticks: { color: '#64748b', font: { size: 10 } } }
+          }
+        }
+      });
+
+      // Productivity Horizontal Bar Chart
+      const ctxProd = document.getElementById('productivityChart').getContext('2d');
+      productivityChartInstance = new Chart(ctxProd, {
+        type: 'bar',
+        data: {
+          labels: ['1ST WK', '2ND WK', '3RD WK', '4TH WK'],
+          datasets: [
+            { label: 'Attendance', data: [170, 168, 171, 172], backgroundColor: '#2563eb', borderRadius: 4 },
+            { label: 'Working Hours', data: [16.5, 16.0, 16.8, 16.5], backgroundColor: '#9333ea', borderRadius: 4 },
+            { label: 'Output %', data: [98, 96, 99, 97], backgroundColor: '#d97706', borderRadius: 4 }
+          ]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { color: '#f1f5f9' }, ticks: { color: '#64748b', font: { size: 10 } } },
+            y: { grid: { color: '#f1f5f9' }, ticks: { color: '#64748b', font: { size: 10 } } }
+          }
+        }
+      });
+    }
+
+    // EXPORT TO EXCEL / CSV
+    function exportToCSV() {
+      if (recordsData.length === 0) return;
+
+      let csv = 'Date,Shift,WB Inbound,Assumed Wt (x1.3),Total Cut Output,WIP Output,Yield Variance,SBP,Balance %,Actual Manning Present,Working Hrs\n';
+      
+      recordsData.forEach(r => {
+        const assumedWt = r.wbInbound * 1.3;
+        const totalBatch = r.cutOutput + r.wipOutput;
+        const yieldVar = totalBatch - assumedWt;
+        const balPct = assumedWt > 0 ? ((totalBatch / assumedWt) * 100).toFixed(2) : '0.00';
+
+        csv += `"${r.date}","${r.shift}",${r.wbInbound},${assumedWt},${r.cutOutput},${r.wipOutput},${yieldVar},${r.sbp},${balPct}%,${r.manning},${r.workingHrs}\n`;
+      });
+
+      csv += '\nItem Code Definitions:\nLQ = PAA\nBQ = PECHO\n';
+
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.setAttribute('download', `RCS_FSQR_Performance_Deck_${new Date().toISOString().split('T')[0]}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+
+</body></html>
